@@ -1,0 +1,333 @@
+{
+  "dataset_name": "Nagoya A* Curated Road Graph",
+  "coordinate_system": "WGS84 latitude/longitude",
+  "notes": "Edges are bidirectional. distance_m is computed with the haversine formula.",
+  "nodes": [
+    {
+      "node_id": 1,
+      "name": "Nagoya Station",
+      "lat": 35.170915,
+      "lng": 136.881537
+    },
+    {
+      "node_id": 2,
+      "name": "Meieki 4-chome",
+      "lat": 35.1718,
+      "lng": 136.8899
+    },
+    {
+      "node_id": 3,
+      "name": "Fushimi",
+      "lat": 35.16892,
+      "lng": 136.89975
+    },
+    {
+      "node_id": 4,
+      "name": "Marunouchi",
+      "lat": 35.1752,
+      "lng": 136.89495
+    },
+    {
+      "node_id": 5,
+      "name": "Nagoya Castle",
+      "lat": 35.185556,
+      "lng": 136.899296
+    },
+    {
+      "node_id": 6,
+      "name": "Hisaya-odori",
+      "lat": 35.17345,
+      "lng": 136.90785
+    },
+    {
+      "node_id": 7,
+      "name": "Sakae",
+      "lat": 35.16958,
+      "lng": 136.90667
+    },
+    {
+      "node_id": 8,
+      "name": "Osu Kannon",
+      "lat": 35.15871,
+      "lng": 136.89947
+    },
+    {
+      "node_id": 9,
+      "name": "Tsurumai",
+      "lat": 35.15678,
+      "lng": 136.9173
+    },
+    {
+      "node_id": 10,
+      "name": "Kanayama",
+      "lat": 35.1439,
+      "lng": 136.90095
+    },
+    {
+      "node_id": 11,
+      "name": "Shinsakae-machi",
+      "lat": 35.17198,
+      "lng": 136.9193
+    },
+    {
+      "node_id": 12,
+      "name": "Nagoya City Hall",
+      "lat": 35.18145,
+      "lng": 136.90618
+    },
+    {
+      "node_id": 13,
+      "name": "Yaba-cho",
+      "lat": 35.16451,
+      "lng": 136.90722
+    },
+    {
+      "node_id": 14,
+      "name": "Shiyakusho West",
+      "lat": 35.17923,
+      "lng": 136.89752
+    },
+    {
+      "node_id": 15,
+      "name": "Osu East",
+      "lat": 35.16053,
+      "lng": 136.90848
+    }
+  ],
+  "edges": [
+    {
+      "from_node": 1,
+      "to_node": 2,
+      "from_name": "Nagoya Station",
+      "to_name": "Meieki 4-chome",
+      "distance_m": 766.49,
+      "distance_km": 0.7665,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 2,
+      "to_node": 3,
+      "from_name": "Meieki 4-chome",
+      "to_name": "Fushimi",
+      "distance_m": 950.87,
+      "distance_km": 0.9509,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 2,
+      "to_node": 4,
+      "from_name": "Meieki 4-chome",
+      "to_name": "Marunouchi",
+      "distance_m": 594.66,
+      "distance_km": 0.5947,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 3,
+      "to_node": 4,
+      "from_name": "Fushimi",
+      "to_name": "Marunouchi",
+      "distance_m": 823.39,
+      "distance_km": 0.8234,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 3,
+      "to_node": 7,
+      "from_name": "Fushimi",
+      "to_name": "Sakae",
+      "distance_m": 633.27,
+      "distance_km": 0.6333,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 3,
+      "to_node": 8,
+      "from_name": "Fushimi",
+      "to_name": "Osu Kannon",
+      "distance_m": 1135.59,
+      "distance_km": 1.1356,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 3,
+      "to_node": 13,
+      "from_name": "Fushimi",
+      "to_name": "Yaba-cho",
+      "distance_m": 837.57,
+      "distance_km": 0.8376,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 4,
+      "to_node": 5,
+      "from_name": "Marunouchi",
+      "to_name": "Nagoya Castle",
+      "distance_m": 1217.39,
+      "distance_km": 1.2174,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 4,
+      "to_node": 6,
+      "from_name": "Marunouchi",
+      "to_name": "Hisaya-odori",
+      "distance_m": 1188.53,
+      "distance_km": 1.1885,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 4,
+      "to_node": 14,
+      "from_name": "Marunouchi",
+      "to_name": "Shiyakusho West",
+      "distance_m": 505.34,
+      "distance_km": 0.5053,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 5,
+      "to_node": 12,
+      "from_name": "Nagoya Castle",
+      "to_name": "Nagoya City Hall",
+      "distance_m": 774.5,
+      "distance_km": 0.7745,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 5,
+      "to_node": 14,
+      "from_name": "Nagoya Castle",
+      "to_name": "Shiyakusho West",
+      "distance_m": 721.7,
+      "distance_km": 0.7217,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 12,
+      "to_node": 6,
+      "from_name": "Nagoya City Hall",
+      "to_name": "Hisaya-odori",
+      "distance_m": 902.42,
+      "distance_km": 0.9024,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 6,
+      "to_node": 7,
+      "from_name": "Hisaya-odori",
+      "to_name": "Sakae",
+      "distance_m": 443.49,
+      "distance_km": 0.4435,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 6,
+      "to_node": 11,
+      "from_name": "Hisaya-odori",
+      "to_name": "Shinsakae-machi",
+      "distance_m": 1053.48,
+      "distance_km": 1.0535,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 6,
+      "to_node": 12,
+      "from_name": "Hisaya-odori",
+      "to_name": "Nagoya City Hall",
+      "distance_m": 902.42,
+      "distance_km": 0.9024,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 7,
+      "to_node": 11,
+      "from_name": "Sakae",
+      "to_name": "Shinsakae-machi",
+      "distance_m": 1178.61,
+      "distance_km": 1.1786,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 7,
+      "to_node": 13,
+      "from_name": "Sakae",
+      "to_name": "Yaba-cho",
+      "distance_m": 565.97,
+      "distance_km": 0.566,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 7,
+      "to_node": 15,
+      "from_name": "Sakae",
+      "to_name": "Osu East",
+      "distance_m": 1019.68,
+      "distance_km": 1.0197,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 8,
+      "to_node": 9,
+      "from_name": "Osu Kannon",
+      "to_name": "Tsurumai",
+      "distance_m": 1635.06,
+      "distance_km": 1.6351,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 8,
+      "to_node": 10,
+      "from_name": "Osu Kannon",
+      "to_name": "Kanayama",
+      "distance_m": 1652.28,
+      "distance_km": 1.6523,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 8,
+      "to_node": 13,
+      "from_name": "Osu Kannon",
+      "to_name": "Yaba-cho",
+      "distance_m": 955.13,
+      "distance_km": 0.9551,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 8,
+      "to_node": 15,
+      "from_name": "Osu Kannon",
+      "to_name": "Osu East",
+      "distance_m": 843.71,
+      "distance_km": 0.8437,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 9,
+      "to_node": 10,
+      "from_name": "Tsurumai",
+      "to_name": "Kanayama",
+      "distance_m": 2064.19,
+      "distance_km": 2.0642,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 9,
+      "to_node": 15,
+      "from_name": "Tsurumai",
+      "to_name": "Osu East",
+      "distance_m": 903.76,
+      "distance_km": 0.9038,
+      "bidirectional": "yes"
+    },
+    {
+      "from_node": 13,
+      "to_node": 15,
+      "from_name": "Yaba-cho",
+      "to_name": "Osu East",
+      "distance_m": 457.14,
+      "distance_km": 0.4571,
+      "bidirectional": "yes"
+    }
+  ]
+}
