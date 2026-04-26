@@ -1,0 +1,204 @@
+{
+  "name": "Curated central Nagoya road graph for A* pathfinding demo",
+  "description": "A small graph dataset used by the project. Nodes are important areas/landmarks in central Nagoya with latitude and longitude. Edges are simplified walkable/drivable connections between nearby nodes. The app calculates edge weights using Haversine distance at runtime.",
+  "map_background": "OpenStreetMap tiles displayed in the frontend through Leaflet",
+  "note": "This is a manually curated educational dataset, not the complete Nagoya road network.",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Nagoya Station",
+      "lat": 35.170915,
+      "lng": 136.881537
+    },
+    {
+      "id": 2,
+      "name": "Meieki 4-chome",
+      "lat": 35.1718,
+      "lng": 136.8899
+    },
+    {
+      "id": 3,
+      "name": "Fushimi",
+      "lat": 35.16892,
+      "lng": 136.89975
+    },
+    {
+      "id": 4,
+      "name": "Marunouchi",
+      "lat": 35.1752,
+      "lng": 136.89495
+    },
+    {
+      "id": 5,
+      "name": "Nagoya Castle",
+      "lat": 35.185556,
+      "lng": 136.899296
+    },
+    {
+      "id": 6,
+      "name": "Hisaya-odori",
+      "lat": 35.17345,
+      "lng": 136.90785
+    },
+    {
+      "id": 7,
+      "name": "Sakae",
+      "lat": 35.16958,
+      "lng": 136.90667
+    },
+    {
+      "id": 8,
+      "name": "Osu Kannon",
+      "lat": 35.15871,
+      "lng": 136.89947
+    },
+    {
+      "id": 9,
+      "name": "Tsurumai",
+      "lat": 35.15678,
+      "lng": 136.9173
+    },
+    {
+      "id": 10,
+      "name": "Kanayama",
+      "lat": 35.1439,
+      "lng": 136.90095
+    },
+    {
+      "id": 11,
+      "name": "Shinsakae-machi",
+      "lat": 35.17198,
+      "lng": 136.9193
+    },
+    {
+      "id": 12,
+      "name": "Nagoya City Hall",
+      "lat": 35.18145,
+      "lng": 136.90618
+    },
+    {
+      "id": 13,
+      "name": "Yaba-cho",
+      "lat": 35.16451,
+      "lng": 136.90722
+    },
+    {
+      "id": 14,
+      "name": "Shiyakusho West",
+      "lat": 35.17923,
+      "lng": 136.89752
+    },
+    {
+      "id": 15,
+      "name": "Osu East",
+      "lat": 35.16053,
+      "lng": 136.90848
+    }
+  ],
+  "edges": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      13
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      14
+    ],
+    [
+      5,
+      12
+    ],
+    [
+      5,
+      14
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      7,
+      13
+    ],
+    [
+      7,
+      15
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      8,
+      15
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      13,
+      15
+    ]
+  ]
+}
