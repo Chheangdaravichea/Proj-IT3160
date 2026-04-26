@@ -1,0 +1,7 @@
+window.APP_CONFIG = {
+  API_BASE_URL: 'http://127.0.0.1:8000/api',
+  MAP_CENTER: [35.1708, 136.9016],
+  MAP_ZOOM: 13,
+  MAP_MIN_ZOOM: 11,
+  SEARCH_STEP_MS: 450,
+};

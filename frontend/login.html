@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagoya A* Live Demo - Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="login-page">
+    <section class="login-card glass-panel">
+      <div class="eyebrow">Nagoya A* Live Demo</div>
+      <h1>Login</h1>
+      <p class="subtitle">Use a normal user account for route search, or an admin account to control rain zones and road blocks.</p>
+
+      <form id="login-form" class="login-form">
+        <label class="field-label" for="username">Username</label>
+        <input id="username" autocomplete="username" placeholder="user or admin" required />
+
+        <label class="field-label" for="password">Password</label>
+        <input id="password" type="password" autocomplete="current-password" placeholder="password" required />
+
+        <button class="primary-btn" type="submit">Login</button>
+        <p id="login-error" class="error-text"></p>
+      </form>
+
+      <section class="card-section demo-accounts">
+        <div class="section-title">Demo accounts</div>
+        <p><strong>User:</strong> user / user123</p>
+        <p><strong>Admin:</strong> admin / admin123</p>
+      </section>
+    </section>
+  </div>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/auth.js"></script>
+  <script>
+    const form = document.getElementById('login-form');
+    const errorText = document.getElementById('login-error');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      errorText.textContent = '';
+
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value;
+
+      try {
+        const data = await window.AuthModule.login(username, password);
+        const fallback = data.user.role === 'admin' ? './admin.html' : './index.html';
+        let next = localStorage.getItem('nagoya_after_login') || fallback;
+        localStorage.removeItem('nagoya_after_login');
+        if (next.includes('admin.html') && data.user.role !== 'admin') {
+          next = './index.html';
+        }
+        window.location.href = next;
+      } catch (error) {
+        errorText.textContent = error.message;
+      }
+    });
+  </script>
+</body>
+</html>
